@@ -20,7 +20,6 @@ public class MessageListener {
 
     public void receiveMessage(String message) {
         log.info("Received <" + message + ">");
-        log.info("Message processed..."+message);
         SpringBootRabbitMQApplication.message = SpringBootRabbitMQApplication.message + " Received message: "+message;
 
         Message newMessage = new Message();
